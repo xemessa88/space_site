@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>weirdo’s webspace </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: #e8eefc;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+    background-color: #0a1a4a;
+    background-image:
+      radial-gradient(1px 1px at 20px 30px, #ffe14d, rgba(0, 0, 0, 0)),
+      radial-gradient(1.5px 1.5px at 90px 80px, #ffe14d, rgba(0, 0, 0, 0)),
+      radial-gradient(1px 1px at 150px 120px, #ffd633, rgba(0, 0, 0, 0)),
+      radial-gradient(2px 2px at 60px 160px, #ffe14d, rgba(0, 0, 0, 0)),
+      radial-gradient(ellipse at top, #1d3fa8 0%, #0a1a4a 55%, #040c26 100%);
+    background-size: 180px 200px, 240px 260px, 300px 320px, 360px 380px, 100% 100%;
+    background-repeat: repeat, repeat, repeat, repeat, no-repeat;
+    background-attachment: fixed;
+  }
+  .signature {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    font-family: "Pacifico", "Brush Script MT", cursive;
+    font-size: clamp(40px, 10vw, 140px);
+    color: rgba(255, 255, 255, 0.45);
+    text-shadow: 0 0 30px rgba(120, 160, 255, 0.45);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+  main {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    background: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  h1, h2, h3 { color: #ffffff; }
+  a { color: #9ec1ff; }
+  hr { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.25); }
+  img { max-width: 100%; height: auto; border-radius: 8px; }
+  small { color: #a9bbe6; }
+</style>
+</head>
+<body>
+<div class="signature">weirdo’s webspace</div>
+<main>
+<h1>Orbital Debris</h1>
+<p>What we left behind in Earth's orbit, and how we might clean it up.</p>
+<img src="https://svs.gsfc.nasa.gov/vis/a000000/a005200/a005258/all_trackable_wActive.02100_print.jpg" alt="Computer visualization of tracked objects around Earth" width="700">
+<p><small>Each orange dot is a tracked object around Earth, February 2024. Image: NASA's Scientific Visualization Studio.</small></p>
+<hr>
+<h2>What is it?</h2>
+<p>Orbital debris is any human-made object left in Earth orbit that no longer serves a purpose, such as defunct satellites and rocket parts.</p>
+<h2>Why is it a problem?</h2>
+<ul>
+  <li>About 20,000 pieces are large enough to be tracked, and spacecraft can steer away from them.</li>
+  <li>The biggest risk comes from small pieces that are too small to track but can still cause damage.</li>
+  <li>Pieces can collide and create even more debris.</li>
+</ul>
+<hr>
+<h2>How can we get rid of it?</h2>
+<h3>1. Lasers</h3>
+<img src="laser-cleaner.jpg" alt="Pixel-art illustration of a spacecraft firing a green laser at floating space debris" width="700">
+<p><small>AI-generated illustration: a laser pushing debris off course.</small></p>
+<p>A laser does not zap debris out of existence. Instead, it vaporizes a tiny part of the surface of a piece of debris, a process called laser ablation. The vaporized material shoots out as a fast plasma plume, and like a small rocket, it pushes the debris off course. Repeated pushes can nudge it away from a predicted collision or into a lower orbit, where it can eventually burn up in the atmosphere. NASA's Office of Technology, Policy, and Strategy found in 2023 that two of the most efficient ways to clean up orbit were removing small debris, 1 to 10 cm in size, and nudging large debris away from predicted collisions, and that high-energy lasers could do both from the ground or from space. Unlike nets and harpoons, which only work on large debris, lasers could in theory handle debris of almost any size. The challenge is that debris comes in odd shapes and spins in different ways, so the push is hard to predict.</p>
+<h3>2. Robots with nets</h3>
+<img src="net-capture.jpg" alt="Pixel-art illustration of a spacecraft capturing satellites and debris in a green net" width="700">
+<p><small>AI-generated illustration: a net capturing debris.</small></p>
+<p>In September 2018, a satellite called RemoveDEBRIS fired a net and captured a target that simulated a piece of debris. It was the first demonstration of active debris removal in orbit. The mission, led by the Surrey Space Centre in the UK with Airbus and other partners, also tested cameras and LiDAR so the satellite could see and follow potential debris. In a real mission, the net would stay attached, and the satellite would drag the debris out of orbit so it burns up. The next idea is to add artificial intelligence, so a robot could find debris, choose a target, and approach and catch it on its own. That part is still an idea, not something that has been demonstrated.</p>
+<hr>
+<h2>Sources</h2>
+<ul>
+  <li><a href="https://svs.gsfc.nasa.gov/5258/">NASA Scientific Visualization Studio: Tracking Satellites and Space Debris in Earth Orbit</a></li>
+  <li><a href="https://ntrs.nasa.gov/citations/20240005687">NASA: Exploring the Use of a Ground-Based Laser System to Deorbit Small Orbital Debris</a></li>
+  <li><a href="https://commission.europa.eu/news-and-media/news/removedebris-makes-its-first-successful-orbit-catch-2018-09-20_mt">European Commission: RemoveDEBRIS makes its first successful in-orbit catch</a></li>
+  <li><a href="https://optics.org/news/14/10/10">Optics.org: Orbital laser platforms could sweep away space debris</a></li>
+</ul>
+
+</main>
+
+<!-- Najm chat widget: floating button + chat window -->
+<style>
+  #najm-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #3d6bff;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  #najm-panel {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 360px;
+    max-width: calc(100vw - 40px);
+    height: 520px;
+    max-height: calc(100vh - 120px);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+  }
+  #najm-panel.open {
+    display: block;
+  }
+  #najm-panel iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
+
+<button id="najm-button" aria-label="Open Najm, the space assistant">💬</button>
+
+<div id="najm-panel">
+  <iframe
+    src="https://chatbot-2tt6.onrender.com"
+    title="Najm, space assistant chatbot"
+    loading="lazy">
+  </iframe>
+</div>
+
+<script>
+  var button = document.getElementById("najm-button");
+  var panel = document.getElementById("najm-panel");
+  button.addEventListener("click", function () {
+    panel.classList.toggle("open");
+  });
+</script>
+</body>
+</html>
