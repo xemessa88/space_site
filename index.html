@@ -53,6 +53,10 @@
   hr { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.25); }
   img { max-width: 100%; height: auto; border-radius: 8px; }
   small { color: #a9bbe6; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  th { color: #ffffff; }
 </style>
 </head>
 <body>
@@ -64,13 +68,38 @@
 <p><small>Each orange dot is a tracked object around Earth, February 2024. Image: NASA's Scientific Visualization Studio.</small></p>
 <hr>
 <h2>What is it?</h2>
-<p>Orbital debris is any human-made object left in Earth orbit that no longer serves a purpose, such as defunct satellites and rocket parts.</p>
+<p>Orbital debris is any human-made object left in Earth orbit that no longer serves a purpose, such as defunct satellites and rocket parts. NASA's list also includes debris released on purpose during separation or operations, pieces from explosions and collisions, solid rocket motor exhaust, and even tiny flecks of paint.</p>
 <h2>Why is it a problem?</h2>
 <ul>
-  <li>About 20,000 pieces are large enough to be tracked, and spacecraft can steer away from them.</li>
-  <li>The biggest risk comes from small pieces that are too small to track but can still cause damage.</li>
+  <li>About 50,000 large objects are tracked, and spacecraft can steer away from them. As of August 2026, the U.S. Space Surveillance Network had cataloged more than 34,000 objects in orbit.</li>
+  <li>NASA estimates about 100 million pieces of debris around a millimeter in size. They are too small to track routinely, but they can still cause damage.</li>
+  <li>Millimeter-sized pieces are the biggest mission-ending risk for most robotic spacecraft in low Earth orbit, because they can puncture fuel tanks and pressurized parts.</li>
   <li>Pieces can collide and create even more debris.</li>
 </ul>
+<hr>
+<h2>The numbers</h2>
+<h3>How fast does it move?</h3>
+<p>In low Earth orbit, debris travels at about 7 to 8 kilometers per second. When two objects hit, their average relative speed is about 10 km/s and can reach about 15 km/s, more than 10 times the speed of a bullet. That is why even a small fragment carries a lot of energy.</p>
+<h3>Where is it?</h3>
+<p>Debris is not spread evenly. Most of it orbits within 2,000 km of Earth's surface, and the amount changes a lot with altitude. Geostationary orbit, near 36,000 km, is generally less crowded, and operators usually move old satellites up to a "graveyard orbit" just above it.</p>
+<h3>How long does it stay up?</h3>
+<div class="table-wrap">
+<table>
+  <tr><th>Altitude</th><th>Typical time in orbit</th></tr>
+  <tr><td>Below 600 km</td><td>Several years</td></tr>
+  <tr><td>About 800 km</td><td>Often centuries</td></tr>
+  <tr><td>Above 1,000 km</td><td>1,000 years or more</td></tr>
+</table>
+</div>
+<h3>Where did it come from?</h3>
+<p>Explosions and collisions are the main sources of large debris. Two events added a lot of it: China's deliberate destruction of the Fengyun-1C weather satellite in 2007, and the accidental collision of Iridium 33 and Cosmos 2251 in 2009.</p>
+<h3>What about people on Earth?</h3>
+<p>Most debris burns up in the severe heating of reentry. What survives usually lands in an ocean or a sparsely populated area, and the chance of it hitting a person is low.</p>
+<h3>What about the space station?</h3>
+<p>The International Space Station normally moves out of the way if a tracked object has a collision chance above 1 in 10,000. It has done this 41 times since 1999. It is also the most heavily shielded spacecraft ever flown, and its critical parts are built to withstand debris up to about 1 cm across. Pieces between 1 and 10 cm pose a small remaining risk.</p>
+<hr>
+<h2>The best fix is not making more</h2>
+<p>NASA says the most important step today is to prevent new debris through careful spacecraft design and operations. Cleaning up what is already there is still a hard technical and economic challenge. NASA follows its own standard, NASA-STD-8719.14, which covers debris released in normal operations, accidental explosions and collisions, end-of-mission disposal, and reentry. There is no international treaty on orbital debris, but space agencies coordinate through the Inter-Agency Space Debris Coordination Committee, and the UN has published mitigation guidelines.</p>
 <hr>
 <h2>How can we get rid of it?</h2>
 <h3>1. Lasers</h3>
@@ -84,6 +113,7 @@
 <hr>
 <h2>Sources</h2>
 <ul>
+  <li><a href="https://orbitaldebris.jsc.nasa.gov/faq/">NASA Orbital Debris Program Office: Frequently Asked Questions</a></li>
   <li><a href="https://svs.gsfc.nasa.gov/5258/">NASA Scientific Visualization Studio: Tracking Satellites and Space Debris in Earth Orbit</a></li>
   <li><a href="https://ntrs.nasa.gov/citations/20240005687">NASA: Exploring the Use of a Ground-Based Laser System to Deorbit Small Orbital Debris</a></li>
   <li><a href="https://commission.europa.eu/news-and-media/news/removedebris-makes-its-first-successful-orbit-catch-2018-09-20_mt">European Commission: RemoveDEBRIS makes its first successful in-orbit catch</a></li>
